@@ -1,0 +1,89 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  margin: 0 auto;
+  font-family: Arial;
+  background-image: url('coding.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.navBar {
+  overflow: hidden;
+  background-color: #161616;
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,.2);
+}
+
+.navBar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navBar a:not(:first-child) {
+  float: right;
+}
+
+.navBar .icon {
+  display: none;
+}
+
+.navBar a:hover:not(:first-child) {
+  background-color: #555;
+  color: white;
+}
+
+.active {
+  background-color: #39b54a;
+  color: white;
+}
+
+.main{
+  padding-top: 7vw;
+  color: white;
+  /* font-weight: 100; */
+  /* font-size: 4.5vw; */
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .navBar a:not(:first-child) {
+    display: none;
+  }
+  .navBar a.icon {
+    float: right;
+    display: block;
+  }
+  .main {
+    padding-top: 20vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navBar.responsive {position: relative;}
+  .navBar.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navBar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .navBar.responsive {float: none;}
+  .navBar.responsive {position: relative;}
+  .navBar.responsive {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
